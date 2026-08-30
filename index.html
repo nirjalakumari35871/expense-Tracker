@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+
+    <h1>💰 Expense Tracker</h1>
+
+    <hr>
+
+    <h2>Add Transaction</h2>
+
+    <input type="text" id="title" placeholder="Enter expense name">
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <select id="type">
+        <option value="expense">Expense</option>
+        <option value="income">Income</option>
+    </select>
+
+    <button onclick="addTransaction()">Add Transaction</button>
+
+    <hr>
+
+    <h2>Summary</h2>
+
+    <p>Total Income: ₹<span id="income">0</span></p>
+
+<p>Total Expense: ₹<span id="expense">0</span></p>
+
+<p>Balance: ₹<span id="balance">0</span></p>
+
+    
+    <hr>
+
+    <h2>Transaction History</h2>
+    <ul id="transactionList"></ul>
+
+    <ul>
+        <li>No transaction yet</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
